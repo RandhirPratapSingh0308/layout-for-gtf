@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Residences - Luxury Redefined</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" tabindex="0">
+
+    <!-- Navbar -->
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top premium-nav">
+        <div class="container">
+            <a class="navbar-brand logo-text" href="#">Arise<br><span>Reality</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <!-- <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li> -->
+                    <li class="nav-item"><a class="nav-link" href="#about">Overview</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#highlights">Highlights</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#price-list">Price List</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#amenities">Amenities</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#master-plan">Master Plan</a></li> 
+                    <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                    <!-- <li class="nav-item"><a class="nav-link" href="#virtual-tour">Virtual Tour</a></li> -->
+                    <li class="nav-item"><a class="nav-link" href="#location">Location</a></li>
+                </ul>
+                <div class="nav-action">
+                    <button class="btn btn-outline-gold" data-bs-toggle="modal" data-bs-target="#enquireModal">Contact Us</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section d-flex align-items-center">
+        <!-- Hero Background Slider -->
+        <div class="swiper hero-bg-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="img/banner/banner1.webp" class="d-none d-md-block" alt="Hero Image 1">
+                    <img src="img/banner/banner1-sm.webp" class="d-block d-md-none" alt="Hero Image 1">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/banner/banner2.webp" class="d-none d-md-block" alt="Hero Image 1">
+                    <img src="img/banner/banner2-sm.webp" class="d-block d-md-none" alt="Hero Image 1">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/banner/banner3.webp" class="d-none d-md-block" alt="Hero Image 1">
+                    <img src="img/banner/banner3-sm.webp" class="d-block d-md-none" alt="Hero Image 1">
+                </div>
+
+            </div>
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="container position-relative z-index-1">
+            <div class="row align-items-center">
+                <div class="col-lg-7 text-white" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="mb-3 d-inline-block px-3 py-1 rounded-pill bg-gold text-white fw-bold small text-uppercase tracking-wider">
+                        <i class="fa-solid fa-location-dot me-2"></i>Riverside Avenue, Premium Suburb
+                    </div>
+                    <h1 class="display-4 fw-bold serif-font mb-2 banner_projectname">Riverside Residences</h1>
+                    <h3 class="h4 fw-light mb-4 banner_typology">2, 3 & 4 BHK Premium Apartments</h3>
+                    
+                    <div class="price-tag mb-4">
+                        <p class="mb-1 text-white opacity-75 small text-uppercase tracking-wider">Starting Price</p>
+                        <h2 class="text-gold fw-bold mb-0">₹ 1.2 Cr* <span class="fs-6 fw-normal text-white opacity-75">Onwards</span></h2>
+                    </div>
+
+                    <div class="d-flex flex-wrap gap-3 mt-4">
+                        <div class="w-100 banner_keyHighlights  bg-dark-green bg-opacity-75 px-3 py-2 rounded border border-light border-opacity-25 d-flex align-items-center">
+                            <i class="fa-solid fa-layer-group text-gold me-2"></i> <span class="small">20+ Acres</span>
+                        </div>
+                        <div class="w-100 banner_keyHighlights  bg-dark-green bg-opacity-75 px-3 py-2 rounded border border-light border-opacity-25 d-flex align-items-center">
+                            <i class="fa-solid fa-leaf text-gold me-2"></i> <span class="small">80% Open Space</span>
+                        </div>
+                        <div class="w-100 banner_keyHighlights  bg-dark-green bg-opacity-75 px-3 py-2 rounded border border-light border-opacity-25 d-flex align-items-center">
+                            <i class="fa-solid fa-gem text-gold me-2"></i> <span class="small">50+ Amenities</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 offset-lg-1" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                    <div class="hero-form-card glassmorphism">
+                        <h4 class="text-center serif-font mb-4">Register For A Free Site Visit</h4>
+                        <form id="heroForm">
+                            <div class="mb-3">
+                                <input type="text" class="form-control" placeholder="Name" required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="email" class="form-control" placeholder="Email" required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="tel" class="form-control" placeholder="Phone" required>
+                            </div>
+                            <div class="mb-4">
+                                <select class="form-select">
+                                    <option selected>Select Project Configuration</option>
+                                    <option value="2bhk">2 BHK</option>
+                                    <option value="3bhk">3 BHK</option>
+                                    <option value="4bhk">4 BHK</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-gold w-100">Enquire Now</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-pagination hero-pagination"></div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section-padding ">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right"> 
+                    <div class="image-wrapper position-relative">
+                        <img src="img/overview.webp" alt="Building Sketch" class="img-fluid rounded shadow-lg">
+                        <div class="floating-badge">
+                            <span class="fs-4 fw-bold">10+</span><br>Years of Excellence
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 offset-lg-1" data-aos="fade-left">
+                    <h2 class="serif-font section-title mb-4">Experience Luxury <br>In Connectivity</h2>
+                    <p class="text-muted mb-4">Arise Reality presents a lifestyle that perfectly balances modern architecture with lush green surroundings. Designed for those who seek perfection, our residences offer unmatched comfort, state-of-the-art amenities, and seamless connectivity to the city's prime locations.</p>
+                    <ul class="list-unstyled custom-list mb-4 text-muted">
+                        <li class="d-flex"><i class="fa-solid fa-check text-gold me-2"></i> Premium 2, 3 & 4 BHK Apartments</li>
+                        <li class="d-flex"><i class="fa-solid fa-check text-gold me-2"></i> Strategically Located for Easy Commute</li>
+                        <li class="d-flex"><i class="fa-solid fa-check text-gold me-2"></i> Vastu Compliant Homes</li>
+                    </ul>
+                    <button class="btn btn-dark-green" data-bs-toggle="modal" data-bs-target="#enquireModal">Download Brochure <i class="fa-solid fa-download ms-2"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!-- Key Highlights -->
+    <section id="highlights" class="section-padding bg-beige">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <span class="text-gold text-uppercase tracking-wider fw-bold">Features</span>
+                <h2 class="serif-font section-title mt-2">Key Highlights</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="highlight-card text-center p-4">
+                        <div class="icon-box mx-auto mb-3">
+                            <i class="fa-solid fa-road text-dark-green fs-3"></i>
+                        </div>
+                        <h5 class="serif-font">Excellent Connectivity</h5>
+                        <p class="text-muted small">Seamless travel to business hubs and recreational centers.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="highlight-card text-center p-4">
+                        <div class="icon-box mx-auto mb-3">
+                            <i class="fa-solid fa-crown text-dark-green fs-3"></i>
+                        </div>
+                        <h5 class="serif-font">Premium Luxury</h5>
+                        <p class="text-muted small">Fittings and finishes that define elegance and sophistication.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="highlight-card text-center p-4">
+                        <div class="icon-box mx-auto mb-3">
+                            <i class="fa-solid fa-map-location-dot text-dark-green fs-3"></i>
+                        </div>
+                        <h5 class="serif-font">Prime Location</h5>
+                        <p class="text-muted small">Situated in the most sought-after neighborhood.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="highlight-card text-center p-4">
+                        <div class="icon-box mx-auto mb-3">
+                            <i class="fa-solid fa-building-user text-dark-green fs-3"></i>
+                        </div>
+                        <h5 class="serif-font">Smart Design</h5>
+                        <p class="text-muted small">Optimized spaces with maximum natural light and ventilation.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <button class="btn btn-outline-dark-green" data-bs-toggle="modal" data-bs-target="#enquireModal">Know More</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Banner -->
+    <section class="stats-section bg-dark-green text-white py-5">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-3 col-6 mb-4 mb-md-0" data-aos="zoom-in" data-aos-delay="100">
+                    <h2 class="serif-font text-gold fw-bold">20+</h2>
+                    <p class="text-uppercase tracking-wider small">Acres Project</p>
+                </div>
+                <div class="col-md-3 col-6 mb-4 mb-md-0" data-aos="zoom-in" data-aos-delay="200">
+                    <h2 class="serif-font text-gold fw-bold">80%</h2>
+                    <p class="text-uppercase tracking-wider small">Open Space</p>
+                </div>
+                <div class="col-md-3 col-6" data-aos="zoom-in" data-aos-delay="300">
+                    <h2 class="serif-font text-gold fw-bold">2, 3, 4</h2>
+                    <p class="text-uppercase tracking-wider small">BHK Premium Homes</p>
+                </div>
+                <div class="col-md-3 col-6" data-aos="zoom-in" data-aos-delay="400">
+                    <h2 class="serif-font text-gold fw-bold">50+</h2>
+                    <p class="text-uppercase tracking-wider small">Lifestyle Amenities</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Pricing -->
+    <section id="price-list" class="section-padding bg-beige">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <span class="text-gold text-uppercase tracking-wider fw-bold">Configurations</span>
+                <h2 class="serif-font section-title mt-2">Pricing & Configurations</h2>
+            </div>
+            <div class="row justify-content-center g-4">
+                <!-- 2 BHK -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="pricing-card p-4 text-center">
+                        <h3 class="serif-font text-dark-green mb-3">2 BHK</h3>
+                        <p class="text-muted small border-bottom pb-3 mb-3">Premium Apartment</p>
+                        <div class="d-flex justify-content-between mb-2">
+                            <span class="text-muted">Carpet Area:</span>
+                            <span class="fw-bold">850 Sq.Ft.</span>
+                        </div>
+                        <div class="d-flex justify-content-between mb-4">
+                            <span class="text-muted">Price:</span>
+                            <span class="fw-bold text-dark-green">₹ 1.2 Cr* Onwards</span>
+                        </div>
+                        <button class="btn btn-outline-dark-green w-100" data-bs-toggle="modal" data-bs-target="#enquireModal">Enquire Now</button>
+                    </div>
+                </div>
+                <!-- 3 BHK -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="pricing-card featured p-4 text-center bg-dark-green text-white position-relative">
+                        <h3 class="serif-font text-white mb-3">3 BHK</h3>
+                        <p class="text-light opacity-75 small border-bottom border-light pb-3 mb-3">Luxury Apartment</p>
+                        <div class="d-flex justify-content-between mb-2">
+                            <span class="text-light opacity-75">Carpet Area:</span>
+                            <span class="fw-bold">1250 Sq.Ft.</span>
+                        </div>
+                        <div class="d-flex justify-content-between mb-4">
+                            <span class="text-light opacity-75">Price:</span>
+                            <span class="fw-bold text-gold">₹ 1.8 Cr* Onwards</span>
+                        </div>
+                        <button class="btn btn-gold w-100" data-bs-toggle="modal" data-bs-target="#enquireModal">Enquire Now</button>
+                    </div>
+                </div>
+                <!-- 4 BHK -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="pricing-card p-4 text-center">
+                        <h3 class="serif-font text-dark-green mb-3">4 BHK</h3>
+                        <p class="text-muted small border-bottom pb-3 mb-3">Ultra Luxury Penthouse</p>
+                        <div class="d-flex justify-content-between mb-2">
+                            <span class="text-muted">Carpet Area:</span>
+                            <span class="fw-bold">1850 Sq.Ft.</span>
+                        </div>
+                        <div class="d-flex justify-content-between mb-4">
+                            <span class="text-muted">Price:</span>
+                            <span class="fw-bold text-dark-green">₹ 2.8 Cr* Onwards</span>
+                        </div>
+                        <button class="btn btn-outline-dark-green w-100" data-bs-toggle="modal" data-bs-target="#enquireModal">Enquire Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5 d-flex gap-3 justify-content-center flex-wrap">
+                <button class="btn btn-dark-green" data-bs-toggle="modal" data-bs-target="#enquireModal">Book A Site Visit</button>
+                <button class="btn btn-outline-dark-green" data-bs-toggle="modal" data-bs-target="#enquireModal">Download Brochure <i class="fa-solid fa-download ms-2"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Amenities -->
+    <section class="section-padding bg-white" id="amenities">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <span class="text-gold text-uppercase tracking-wider fw-bold">Lifestyle</span>
+                <h2 class="serif-font section-title mt-2">World Class Amenities</h2>
+            </div>
+            <div class="row g-4 justify-content-center text-center">
+                <div class="col-lg-2 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="amenity-item">
+                        <div class="amenity-icon"><i class="fa-solid fa-dumbbell"></i></div>
+                        <p class="mt-2 small fw-semibold">Modern Gym</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="150">
+                    <div class="amenity-item">
+                        <div class="amenity-icon"><i class="fa-solid fa-person-swimming"></i></div>
+                        <p class="mt-2 small fw-semibold">Swimming Pool</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="amenity-item">
+                        <div class="amenity-icon"><i class="fa-solid fa-martini-glass"></i></div>
+                        <p class="mt-2 small fw-semibold">Clubhouse</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="250">
+                    <div class="amenity-item">
+                        <div class="amenity-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                        <p class="mt-2 small fw-semibold">24/7 Security</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="amenity-item">
+                        <div class="amenity-icon"><i class="fa-solid fa-car"></i></div>
+                        <p class="mt-2 small fw-semibold">Covered Parking</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="350">
+                    <div class="amenity-item">
+                        <div class="amenity-icon"><i class="fa-solid fa-tree"></i></div>
+                        <p class="mt-2 small fw-semibold">Lush Gardens</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="amenity-item">
+                        <div class="amenity-icon"><i class="fa-solid fa-child-reaching"></i></div>
+                        <p class="mt-2 small fw-semibold">Kids Play Area</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="450">
+                    <div class="amenity-item">
+                        <div class="amenity-icon"><i class="fa-solid fa-table-tennis-paddle-ball"></i></div>
+                        <p class="mt-2 small fw-semibold">Indoor Games</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <button class="btn btn-outline-dark-green" data-bs-toggle="modal" data-bs-target="#enquireModal">+ 40 More Amenities</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Master Plan -->
+    <section class="section-padding bg-dark-green text-white" id="master-plan">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5 mb-5 mb-lg-0" data-aos="fade-right">
+                    <span class="text-gold text-uppercase tracking-wider fw-bold">Layout</span>
+                    <h2 class="serif-font section-title text-white mt-2 mb-4">Master Plan</h2>
+                    <p class="text-light opacity-75 mb-4">Explore the thoughtfully designed master plan that integrates luxurious living spaces with abundant nature. Every zone is crafted to enhance your daily living experience.</p>
+                    <ul class="list-unstyled custom-list text-light opacity-75 mb-4">
+                        <li><i class="fa-solid fa-circle-check text-gold me-2"></i> Central Park & Green Spaces</li>
+                        <li><i class="fa-solid fa-circle-check text-gold me-2"></i> Dedicated Walking Trails</li>
+                        <li><i class="fa-solid fa-circle-check text-gold me-2"></i> Secure Gated Community</li>
+                    </ul>
+                    <button class="btn btn-gold" data-bs-toggle="modal" data-bs-target="#enquireModal">Download Plan</button>
+                </div>
+                <div class="col-lg-7" data-aos="fade-left">
+                    <div class="master-plan-img p-2 bg-white rounded shadow">
+                        <img src="img/master-plan.webp" alt="Master Plan" class="img-fluid rounded">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Premium Floor Plan Section -->
+    <section class="section-padding bg-white" id="floor-plans">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <span class="text-gold text-uppercase tracking-wider fw-bold">Master Layouts</span>
+                <h2 class="serif-font section-title mt-2">Premium Floor Plans</h2>
+                <p class="text-muted mt-3 max-w-700 mx-auto opacity-75">Explore our thoughtfully designed layouts that maximize space, natural light, and ventilation to offer you a perfect living experience.</p>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <!-- 3 BHK Plan -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up">
+                    <div class="pricing-card overflow-hidden bg-dark-green text-center h-100 position-relative border-0 shadow-lg">
+                        <div class="position-relative">
+                            <img src="img/floor-plan-sm.webp" alt="3 BHK Floor Plan" class="img-fluid w-100" >
+                            <div class="position-absolute top-50 start-50 translate-middle">
+                                <button class="btn btn-gold px-4" data-bs-toggle="modal" data-bs-target="#enquireModal"><i class="fa-solid fa-phone me-2"></i>Request A Call</button>
+                            </div>
+                        </div>
+                        <div class="p-4 bg-dark-green text-white border-top border-gold border-opacity-25">
+                            <h4 class="serif-font text-gold mb-0">3 BHK Apartments</h4>
+                            <p class="small text-white-50 mt-2 mb-0 text-uppercase tracking-wider">Spacious Living</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 4 BHK Plan -->
+                <div class="col-lg-4 col-md-6 " data-aos="fade-up" data-aos-delay="100"> 
+                    <div class="pricing-card featured overflow-hidden bg-dark-green text-center h-100 position-relative shadow-lg" >
+                        
+                        <div class="position-relative overflow-hidden">
+                            <img src="img/floor-plan-sm.webp" alt="4 BHK Floor Plan" class="img-fluid w-100 ">
+                            <div class="position-absolute top-50 start-50 translate-middle">
+                                <button class="btn btn-gold px-4" data-bs-toggle="modal" data-bs-target="#enquireModal"><i class="fa-solid fa-phone me-2"></i>Request A Call</button>
+                            </div>
+                        </div>
+                        <div class="p-4 bg-dark-green text-white border-top border-gold border-opacity-25">
+                            <h4 class="serif-font text-gold mb-0">4 BHK Apartments</h4>
+                            <p class="small text-white-50 mt-2 mb-0 text-uppercase tracking-wider">Premium Luxury</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Penthouse Plan -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="pricing-card overflow-hidden bg-dark-green text-center h-100 position-relative border-0 shadow-lg">
+                        <div class="position-relative">
+                            <img src="img/floor-plan-sm.webp" alt="Penthouse Floor Plan" class="img-fluid w-100">
+                            <div class="position-absolute top-50 start-50 translate-middle">
+                                <button class="btn btn-gold px-4" data-bs-toggle="modal" data-bs-target="#enquireModal"><i class="fa-solid fa-phone me-2"></i>Request A Call</button>
+                            </div>
+                        </div>
+                        <div class="p-4 bg-dark-green text-white border-top border-gold border-opacity-25">
+                            <h4 class="serif-font text-gold mb-0">Exclusive Penthouse</h4>
+                            <p class="small text-white-50 mt-2 mb-0 text-uppercase tracking-wider">Ultimate Grandeur</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section (Slider) -->
+    <section id="gallery" class="section-padding bg-beige">
+        <div class="container-fluid px-0">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <span class="text-gold text-uppercase tracking-wider fw-bold">Visuals</span>
+                <h2 class="serif-font section-title mt-2">Project Gallery</h2>
+            </div>
+            <div class="swiper gallery-slider" data-aos="fade-up" data-aos-delay="200">
+                <div class="swiper-wrapper">
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide">
+                        <img src="img/gallery/gal1.webp" alt="Gallery Image 1" class="img-fluid">
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                        <img src="img/gallery/gal2.webp" alt="Gallery Image 2" class="img-fluid">
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide">
+                        <img src="img/gallery/gal3.webp" alt="Gallery Image 3" class="img-fluid">
+                    </div>
+                    <!-- Slide 4 -->
+                    <div class="swiper-slide">
+                        <img src="img/gallery/gal4.webp" alt="Gallery Image 4" class="img-fluid">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/gallery/gal5.webp" alt="Gallery Image 3" class="img-fluid">
+                    </div>
+                    <!-- Slide 4 -->
+                    <div class="swiper-slide">
+                        <img src="img/gallery/gal6.webp" alt="Gallery Image 4" class="img-fluid">
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+                <!-- <div class="swiper-pagination"></div> -->
+                <!-- Add Navigation -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Virtual Tour / Video Section -->
+    <section id="virtual-tour" class="gallery-section position-relative">
+        <div class="row g-0 align-items-center">
+            <div class="col-lg-4 bg-dark-green text-white p-5 d-flex flex-column justify-content-center" style="min-height: 500px;" data-aos="fade-right">
+                <span class="text-gold text-uppercase tracking-wider fw-bold">Virtual Tour</span>
+                <h2 class="serif-font display-5 mt-2 mb-4">Stellar And<br>Accommodating</h2>
+                <ul class="list-unstyled custom-list-large text-light opacity-75">
+                    <li class="mb-3"><i class="fa-solid fa-arrow-right text-gold me-2"></i> Grand Entrance Lobby</li>
+                    <li class="mb-3"><i class="fa-solid fa-arrow-right text-gold me-2"></i> Spacious Living Areas</li>
+                    <li class="mb-3"><i class="fa-solid fa-arrow-right text-gold me-2"></i> Designer Kitchens</li>
+                    <li><i class="fa-solid fa-arrow-right text-gold me-2"></i> Panoramic Views</li>
+                </ul>
+            </div>
+            <div class="col-lg-8" data-aos="fade-left">
+                <div class="gallery-image-wrapper position-relative">
+                    <img src="img/virtual-tour.webp" alt="Lobby" class="img-fluid w-100" style="object-fit: cover; height: 500px;">
+                    <div class="play-button-overlay">
+                        <a data-bs-toggle="modal" data-bs-target="#enquireModal" class="play-btn"><i class="fa-solid fa-play"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Map -->
+    <section id="location" class="section-padding bg-beige">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="serif-font section-title">Connected With Everything & Everyone</h2>
+                <p class="text-muted mt-2">Strategically located for your convenience.</p>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-3 order-2 order-lg-1" data-aos="fade-right">
+                    <div class="location-list">
+                        <h5 class="serif-font text-dark-green border-bottom pb-2 mb-3">Education</h5>
+                        <ul class="list-unstyled small text-muted mb-4">
+                            <li class="mb-2 d-flex justify-content-between"><span>International School</span> <span>5 Mins</span></li>
+                            <li class="mb-2 d-flex justify-content-between"><span>City College</span> <span>10 Mins</span></li>
+                        </ul>
+                        <h5 class="serif-font text-dark-green border-bottom pb-2 mb-3">Healthcare</h5>
+                        <ul class="list-unstyled small text-muted">
+                            <li class="mb-2 d-flex justify-content-between"><span>Multi-Specialty Hosp.</span> <span>8 Mins</span></li>
+                            <li class="mb-2 d-flex justify-content-between"><span>City Clinic</span> <span>5 Mins</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6 order-1 order-lg-2 mb-4 mb-lg-0" data-aos="zoom-in">
+                    <div class="map-container p-2 bg-white rounded-circle shadow-lg text-center" style="width: 100%; aspect-ratio: 1; max-width: 500px; margin: 0 auto; overflow: hidden; border: 10px solid #fff;">
+                        <img src="img/location.webp" alt="Map" class="img-fluid w-100 h-100" style="object-fit: cover;">
+                        <div class="map-pin position-absolute top-50 start-50 translate-middle text-dark-green fs-1">
+                            <i class="fa-solid fa-location-dot drop-shadow"></i>
+                        </div>
+                    </div>
+                    <div class="text-center mt-4">
+                        <button class="btn btn-dark-green" data-bs-toggle="modal" data-bs-target="#enquireModal">Get Directions</button>
+                    </div>
+                </div>
+                <div class="col-lg-3 order-3 order-lg-3" data-aos="fade-left">
+                    <div class="location-list">
+                        <h5 class="serif-font text-dark-green border-bottom pb-2 mb-3">Entertainment</h5>
+                        <ul class="list-unstyled small text-muted mb-4">
+                            <li class="mb-2 d-flex justify-content-between"><span>Mega Mall</span> <span>15 Mins</span></li>
+                            <li class="mb-2 d-flex justify-content-between"><span>Multiplex Cinema</span> <span>12 Mins</span></li>
+                        </ul>
+                        <h5 class="serif-font text-dark-green border-bottom pb-2 mb-3">Transport</h5>
+                        <ul class="list-unstyled small text-muted">
+                            <li class="mb-2 d-flex justify-content-between"><span>Metro Station</span> <span>2 Mins</span></li>
+                            <li class="mb-2 d-flex justify-content-between"><span>International Airport</span> <span>45 Mins</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mt-5 text-center g-3 border-top pt-4">
+                <div class="col-md-3 col-6"><span class="text-muted small">Metro Station: <strong class="text-dark">2 Mins</strong></span></div>
+                <div class="col-md-3 col-6"><span class="text-muted small">IT Park: <strong class="text-dark">10 Mins</strong></span></div>
+                <div class="col-md-3 col-6"><span class="text-muted small">Hospital: <strong class="text-dark">8 Mins</strong></span></div>
+                <div class="col-md-3 col-6"><span class="text-muted small">School: <strong class="text-dark">5 Mins</strong></span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Contact -->
+    <footer class="bg-dark-green text-white pt-5">
+        <div class="container">
+            <div class="row align-items-center mb-5 pb-5 border-bottom border-secondary">
+                <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right">
+                    <h3 class="serif-font mb-4">Have Questions? Get In Touch</h3>
+                    <form class="footer-form row g-3">
+                        <div class="col-md-6">
+                            <input type="text" class="form-control bg-transparent border-secondary text-white" placeholder="Name">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="email" class="form-control bg-transparent border-secondary text-white" placeholder="Email">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="tel" class="form-control bg-transparent border-secondary text-white" placeholder="Phone Number">
+                        </div>
+                        <div class="col-md-6">
+                            <select class="form-select bg-transparent border-secondary text-white" style="color-scheme: dark;">
+                                <option selected>Interested In</option>
+                                <option value="2">2 BHK</option>
+                                <option value="3">3 BHK</option>
+                            </select>
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-gold w-100">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-5 offset-lg-1" data-aos="fade-left">
+                    <div class="bg-white text-dark p-4 p-lg-5 rounded text-center h-100 d-flex flex-column justify-content-center">
+                        <h2 class="serif-font text-dark-green mb-3 fw-bold">Arise Reality</h2>
+                        <p class="text-muted small mb-0 lh-lg">With over a decade of experience in crafting premium living spaces, Arise Reality is synonymous with trust, quality, and innovation. We build communities where families thrive and memories are created.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mb-4 text-center text-md-start">
+                <div class="col-md-4 mb-3">
+                    <h6 class="text-gold mb-3 text-uppercase tracking-wider">Corporate Office</h6>
+                    <p class="small opacity-75 mb-0"><i class="fa-solid fa-location-dot me-2"></i> 123 Premium Tower, Business Hub, City 400001</p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h6 class="text-gold mb-3 text-uppercase tracking-wider">Site Address</h6>
+                    <p class="small opacity-75 mb-0"><i class="fa-solid fa-map me-2"></i> Plot 45, Riverside Avenue, Premium Suburb, City 400050</p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h6 class="text-gold mb-3 text-uppercase tracking-wider">Contact Us</h6>
+                    <p class="small opacity-75 mb-1"><i class="fa-solid fa-phone me-2"></i> +91 98765 43210</p>
+                    <p class="small opacity-75 mb-0"><i class="fa-solid fa-envelope me-2"></i> sales@arisereality.com</p>
+                </div>
+            </div>
+            
+            <div class="row border-top border-secondary pt-3 pb-3 align-items-center">
+                <div class="col-md-8 text-center text-md-start mb-3 mb-md-0">
+                    <p class="small opacity-50 mb-0">Disclaimer: The content is for information purposes only and does not constitute an offer to avail of any service. Prices mentioned are subject to change without notice and properties mentioned are subject to availability.</p>
+                </div>
+                <div class="col-md-4 text-center text-md-end">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/QR_code_for_mobile_English_Wikipedia.svg" alt="QR Code" class="bg-white p-1 rounded" style="width: 60px;">
+                    <p class="small opacity-75 mt-2 mb-0">MahaRERA: P518000XXXXX</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Enquire Modal -->
+    <div class="modal fade" id="enquireModal" tabindex="-1" aria-labelledby="enquireModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content border-0">
+                <div class="modal-header bg-dark-green text-white border-0">
+                    <h5 class="modal-title serif-font" id="enquireModalLabel">Register Your Interest</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4 bg-beige">
+                    <form>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Email" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="tel" class="form-control" placeholder="Phone" required>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="3" placeholder="Message (Optional)"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-dark-green w-100">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animation Library JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>
