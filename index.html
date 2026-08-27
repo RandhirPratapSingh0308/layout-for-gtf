@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Premium Residences - Luxury Redefined</title>
     
+    
+    <!-- Preload LCP Images -->
+    <link rel="preload" as="image" href="img/banner/banner1.webp" media="(min-width: 768px)">
+    <link rel="preload" as="image" href="img/banner/banner1-sm.webp" media="(max-width: 767px)">
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,10 +19,12 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     
     <!-- FontAwesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"></noscript>
 
     <!-- AOS Animation Library -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"></noscript>
 
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -59,16 +66,16 @@
         <div class="swiper hero-bg-slider">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <img src="img/banner/banner1.webp" class="d-none d-md-block" alt="Hero Image 1">
-                    <img src="img/banner/banner1-sm.webp" class="d-block d-md-none" alt="Hero Image 1">
+                    <img src="img/banner/banner1.webp" class="d-none d-md-block" alt="Hero Image 1" fetchpriority="high">
+                    <img src="img/banner/banner1-sm.webp" class="d-block d-md-none" alt="Hero Image 1" fetchpriority="high">
                 </div>
                 <div class="swiper-slide">
-                    <img src="img/banner/banner2.webp" class="d-none d-md-block" alt="Hero Image 1">
-                    <img src="img/banner/banner2-sm.webp" class="d-block d-md-none" alt="Hero Image 1">
+                    <img src="img/banner/banner2.webp" class="d-none d-md-block" alt="Hero Image 1" loading="lazy">
+                    <img src="img/banner/banner2-sm.webp" class="d-block d-md-none" alt="Hero Image 1" loading="lazy">
                 </div>
                 <div class="swiper-slide">
-                    <img src="img/banner/banner3.webp" class="d-none d-md-block" alt="Hero Image 1">
-                    <img src="img/banner/banner3-sm.webp" class="d-block d-md-none" alt="Hero Image 1">
+                    <img src="img/banner/banner3.webp" class="d-none d-md-block" alt="Hero Image 1" loading="lazy">
+                    <img src="img/banner/banner3-sm.webp" class="d-block d-md-none" alt="Hero Image 1" loading="lazy">
                 </div>
 
             </div>
@@ -103,26 +110,21 @@
                 <div class="col-lg-4 offset-lg-1" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
                     <div class="hero-form-card glassmorphism">
                         <h4 class="text-center serif-font mb-4">Register For A Free Site Visit</h4>
-                        <form id="heroForm">
+                        <div>
                             <div class="mb-3">
-                                <input type="text" class="form-control" placeholder="Name" required>
+                                <input type="text" class="form-control" placeholder="Name"  id="qSenderName">
                             </div>
                             <div class="mb-3">
-                                <input type="email" class="form-control" placeholder="Email" required>
+                                <input type="email" class="form-control" placeholder="Email"  id="qEmailID">
                             </div>
                             <div class="mb-3">
-                                <input type="tel" class="form-control" placeholder="Phone" required>
+                                <input type="tel" class="form-control" placeholder="Phone"  id="qMobileNo"> 
                             </div>
                             <div class="mb-4">
-                                <select class="form-select">
-                                    <option selected>Select Project Configuration</option>
-                                    <option value="2bhk">2 BHK</option>
-                                    <option value="3bhk">3 BHK</option>
-                                    <option value="4bhk">4 BHK</option>
-                                </select>
+                                <textarea class="form-control" rows="3" placeholder="Message" id="qMessage"></textarea>
                             </div>
-                            <button type="submit" class="btn btn-gold w-100">Enquire Now</button>
-                        </form>
+                            <button type="submit" class="btn btn-gold w-100" id="SubmitQuery">Enquire Now</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -136,7 +138,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right"> 
                     <div class="image-wrapper position-relative">
-                        <img src="img/overview.webp" alt="Building Sketch" class="img-fluid rounded shadow-lg">
+                        <img src="img/overview.webp" alt="Building Sketch" class="img-fluid rounded shadow-lg" loading="lazy">
                         <div class="floating-badge">
                             <span class="fs-4 fw-bold">10+</span><br>Years of Excellence
                         </div>
@@ -377,7 +379,7 @@
                 </div>
                 <div class="col-lg-7" data-aos="fade-left">
                     <div class="master-plan-img p-2 bg-white rounded shadow">
-                        <img src="img/master-plan.webp" alt="Master Plan" class="img-fluid rounded">
+                        <img src="img/master-plan.webp" alt="Master Plan" class="img-fluid rounded" loading="lazy">
                     </div>
                 </div>
             </div>
@@ -397,14 +399,13 @@
                 <div class="col-lg-4 col-md-6" data-aos="fade-up">
                     <div class="pricing-card overflow-hidden bg-dark-green text-center h-100 position-relative border-0 shadow-lg">
                         <div class="position-relative">
-                            <img src="img/floor-plan-sm.webp" alt="3 BHK Floor Plan" class="img-fluid w-100" >
+                            <img src="img/floor-plan-sm.webp" alt="3 BHK Floor Plan" class="img-fluid w-100"  loading="lazy">
                             <div class="position-absolute top-50 start-50 translate-middle">
                                 <button class="btn btn-gold px-4" data-bs-toggle="modal" data-bs-target="#enquireModal"><i class="fa-solid fa-phone me-2"></i>Request A Call</button>
                             </div>
                         </div>
                         <div class="p-4 bg-dark-green text-white border-top border-gold border-opacity-25">
                             <h4 class="serif-font text-gold mb-0">3 BHK Apartments</h4>
-                            <p class="small text-white-50 mt-2 mb-0 text-uppercase tracking-wider">Spacious Living</p>
                         </div>
                     </div>
                 </div>
@@ -413,14 +414,13 @@
                     <div class="pricing-card featured overflow-hidden bg-dark-green text-center h-100 position-relative shadow-lg" >
                         
                         <div class="position-relative overflow-hidden">
-                            <img src="img/floor-plan-sm.webp" alt="4 BHK Floor Plan" class="img-fluid w-100 ">
+                            <img src="img/floor-plan-sm.webp" alt="4 BHK Floor Plan" class="img-fluid w-100 " loading="lazy">
                             <div class="position-absolute top-50 start-50 translate-middle">
                                 <button class="btn btn-gold px-4" data-bs-toggle="modal" data-bs-target="#enquireModal"><i class="fa-solid fa-phone me-2"></i>Request A Call</button>
                             </div>
                         </div>
                         <div class="p-4 bg-dark-green text-white border-top border-gold border-opacity-25">
                             <h4 class="serif-font text-gold mb-0">4 BHK Apartments</h4>
-                            <p class="small text-white-50 mt-2 mb-0 text-uppercase tracking-wider">Premium Luxury</p>
                         </div>
                     </div>
                 </div>
@@ -428,14 +428,13 @@
                 <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
                     <div class="pricing-card overflow-hidden bg-dark-green text-center h-100 position-relative border-0 shadow-lg">
                         <div class="position-relative">
-                            <img src="img/floor-plan-sm.webp" alt="Penthouse Floor Plan" class="img-fluid w-100">
+                            <img src="img/floor-plan-sm.webp" alt="Penthouse Floor Plan" class="img-fluid w-100" loading="lazy">
                             <div class="position-absolute top-50 start-50 translate-middle">
                                 <button class="btn btn-gold px-4" data-bs-toggle="modal" data-bs-target="#enquireModal"><i class="fa-solid fa-phone me-2"></i>Request A Call</button>
                             </div>
                         </div>
                         <div class="p-4 bg-dark-green text-white border-top border-gold border-opacity-25">
                             <h4 class="serif-font text-gold mb-0">Exclusive Penthouse</h4>
-                            <p class="small text-white-50 mt-2 mb-0 text-uppercase tracking-wider">Ultimate Grandeur</p>
                         </div>
                     </div>
                 </div>
@@ -454,26 +453,26 @@
                 <div class="swiper-wrapper">
                     <!-- Slide 1 -->
                     <div class="swiper-slide">
-                        <img src="img/gallery/gal1.webp" alt="Gallery Image 1" class="img-fluid">
+                        <img src="img/gallery/gal1.webp" alt="Gallery Image 1" class="img-fluid" loading="lazy">
                     </div>
                     <!-- Slide 2 -->
                     <div class="swiper-slide">
-                        <img src="img/gallery/gal2.webp" alt="Gallery Image 2" class="img-fluid">
+                        <img src="img/gallery/gal2.webp" alt="Gallery Image 2" class="img-fluid" loading="lazy">
                     </div>
                     <!-- Slide 3 -->
                     <div class="swiper-slide">
-                        <img src="img/gallery/gal3.webp" alt="Gallery Image 3" class="img-fluid">
+                        <img src="img/gallery/gal3.webp" alt="Gallery Image 3" class="img-fluid" loading="lazy">
                     </div>
                     <!-- Slide 4 -->
                     <div class="swiper-slide">
-                        <img src="img/gallery/gal4.webp" alt="Gallery Image 4" class="img-fluid">
+                        <img src="img/gallery/gal4.webp" alt="Gallery Image 4" class="img-fluid" loading="lazy">
                     </div>
                     <div class="swiper-slide">
-                        <img src="img/gallery/gal5.webp" alt="Gallery Image 3" class="img-fluid">
+                        <img src="img/gallery/gal5.webp" alt="Gallery Image 3" class="img-fluid" loading="lazy">
                     </div>
                     <!-- Slide 4 -->
                     <div class="swiper-slide">
-                        <img src="img/gallery/gal6.webp" alt="Gallery Image 4" class="img-fluid">
+                        <img src="img/gallery/gal6.webp" alt="Gallery Image 4" class="img-fluid" loading="lazy">
                     </div>
                 </div>
                 <!-- Add Pagination -->
@@ -500,7 +499,7 @@
             </div>
             <div class="col-lg-8" data-aos="fade-left">
                 <div class="gallery-image-wrapper position-relative">
-                    <img src="img/virtual-tour.webp" alt="Lobby" class="img-fluid w-100" style="object-fit: cover; height: 500px;">
+                    <img src="img/virtual-tour.webp" alt="Lobby" class="img-fluid w-100" style="object-fit: cover; height: 500px;" loading="lazy">
                     <div class="play-button-overlay">
                         <a data-bs-toggle="modal" data-bs-target="#enquireModal" class="play-btn"><i class="fa-solid fa-play"></i></a>
                     </div>
@@ -533,7 +532,7 @@
                 </div>
                 <div class="col-lg-6 order-1 order-lg-2 mb-4 mb-lg-0" data-aos="zoom-in">
                     <div class="map-container p-2 bg-white rounded-circle shadow-lg text-center" style="width: 100%; aspect-ratio: 1; max-width: 500px; margin: 0 auto; overflow: hidden; border: 10px solid #fff;">
-                        <img src="img/location.webp" alt="Map" class="img-fluid w-100 h-100" style="object-fit: cover;">
+                        <img src="img/location.webp" alt="Map" class="img-fluid w-100 h-100" style="object-fit: cover;" loading="lazy">
                         <div class="map-pin position-absolute top-50 start-50 translate-middle text-dark-green fs-1">
                             <i class="fa-solid fa-location-dot drop-shadow"></i>
                         </div>
@@ -557,13 +556,6 @@
                     </div>
                 </div>
             </div>
-            
-            <div class="row mt-5 text-center g-3 border-top pt-4">
-                <div class="col-md-3 col-6"><span class="text-muted small">Metro Station: <strong class="text-dark">2 Mins</strong></span></div>
-                <div class="col-md-3 col-6"><span class="text-muted small">IT Park: <strong class="text-dark">10 Mins</strong></span></div>
-                <div class="col-md-3 col-6"><span class="text-muted small">Hospital: <strong class="text-dark">8 Mins</strong></span></div>
-                <div class="col-md-3 col-6"><span class="text-muted small">School: <strong class="text-dark">5 Mins</strong></span></div>
-            </div>
         </div>
     </section>
 
@@ -573,27 +565,23 @@
             <div class="row align-items-center mb-5 pb-5 border-bottom border-secondary">
                 <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right">
                     <h3 class="serif-font mb-4">Have Questions? Get In Touch</h3>
-                    <form class="footer-form row g-3">
+                    <div class="footer-form row g-3">
                         <div class="col-md-6">
-                            <input type="text" class="form-control bg-transparent border-secondary text-white" placeholder="Name">
+                            <input type="text" class="form-control bg-transparent border-secondary text-white" placeholder="Name" id="qSenderName1">
                         </div>
                         <div class="col-md-6">
-                            <input type="email" class="form-control bg-transparent border-secondary text-white" placeholder="Email">
+                            <input type="email" class="form-control bg-transparent border-secondary text-white" placeholder="Email" id="qEmailID1">
                         </div>
                         <div class="col-md-6">
-                            <input type="tel" class="form-control bg-transparent border-secondary text-white" placeholder="Phone Number">
+                            <input type="tel" class="form-control bg-transparent border-secondary text-white" placeholder="Phone Number" id="qMobileNo1">
                         </div>
                         <div class="col-md-6">
-                            <select class="form-select bg-transparent border-secondary text-white" style="color-scheme: dark;">
-                                <option selected>Interested In</option>
-                                <option value="2">2 BHK</option>
-                                <option value="3">3 BHK</option>
-                            </select>
+                            <textarea class="form-control bg-transparent border-secondary text-white" rows="3" placeholder="Message" id="qMessage1"></textarea>
                         </div>
                         <div class="col-12">
-                            <button type="submit" class="btn btn-gold w-100">Send Message</button>
+                            <button  class="btn btn-gold w-100" id="SubmitQuery1">Send Message</button>
                         </div>
-                    </form>
+                    </div>
                 </div>
                 <div class="col-lg-5 offset-lg-1" data-aos="fade-left">
                     <div class="bg-white text-dark p-4 p-lg-5 rounded text-center h-100 d-flex flex-column justify-content-center">
@@ -605,17 +593,17 @@
             
             <div class="row mb-4 text-center text-md-start">
                 <div class="col-md-4 mb-3">
-                    <h6 class="text-gold mb-3 text-uppercase tracking-wider">Corporate Office</h6>
-                    <p class="small opacity-75 mb-0"><i class="fa-solid fa-location-dot me-2"></i> 123 Premium Tower, Business Hub, City 400001</p>
+                    <h6 class="text-gold mb-3 text-uppercase tracking-wider">Project Address</h6>
+                    <p class="small opacity-75 mb-0"><i class="fa-solid fa-location-dot me-2"></i> Riverside Avenue, Premium Suburb</p>
                 </div>
                 <div class="col-md-4 mb-3">
-                    <h6 class="text-gold mb-3 text-uppercase tracking-wider">Site Address</h6>
-                    <p class="small opacity-75 mb-0"><i class="fa-solid fa-map me-2"></i> Plot 45, Riverside Avenue, Premium Suburb, City 400050</p>
+                    <h6 class="text-gold mb-3 text-uppercase tracking-wider">About Policy</h6>
+                    <p class="small opacity-75 mb-0"><i class="fa-solid fa-map me-2"></i> <a href="disclaimer.html" target="_blank" class="text-decoration-none text-white " rel="noopener noreferrer">Disclaimer & Privacy Policy</a></p>
                 </div>
                 <div class="col-md-4 mb-3">
                     <h6 class="text-gold mb-3 text-uppercase tracking-wider">Contact Us</h6>
                     <p class="small opacity-75 mb-1"><i class="fa-solid fa-phone me-2"></i> +91 98765 43210</p>
-                    <p class="small opacity-75 mb-0"><i class="fa-solid fa-envelope me-2"></i> sales@arisereality.com</p>
+                    
                 </div>
             </div>
             
@@ -624,8 +612,9 @@
                     <p class="small opacity-50 mb-0">Disclaimer: The content is for information purposes only and does not constitute an offer to avail of any service. Prices mentioned are subject to change without notice and properties mentioned are subject to availability.</p>
                 </div>
                 <div class="col-md-4 text-center text-md-end">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/QR_code_for_mobile_English_Wikipedia.svg" alt="QR Code" class="bg-white p-1 rounded" style="width: 60px;">
-                    <p class="small opacity-75 mt-2 mb-0">MahaRERA: P518000XXXXX</p>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/QR_code_for_mobile_English_Wikipedia.svg" alt="QR Code" class="bg-white p-1 rounded" style="width: 60px;" loading="lazy">
+                    <p class="small opacity-75 mt-2 mb-0">Project Rera: P518000XXXXX</p>
+                    <p class="small opacity-75 mt-2 mb-0">Agent Rera: P518000XXXXX</p>
                 </div>
             </div>
         </div>
@@ -640,21 +629,21 @@
                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body p-4 bg-beige">
-                    <form>
+                    <div>
                         <div class="mb-3">
-                            <input type="text" class="form-control" placeholder="Name" required>
+                            <input type="text" class="form-control" placeholder="Name" id="qSenderName2">
                         </div>
                         <div class="mb-3">
-                            <input type="email" class="form-control" placeholder="Email" required>
+                            <input type="email" class="form-control" placeholder="Email" id="qEmailID2">
                         </div>
                         <div class="mb-3">
-                            <input type="tel" class="form-control" placeholder="Phone" required>
+                            <input type="tel" class="form-control" placeholder="Phone" id="qMobileNo2">
                         </div>
                         <div class="mb-3">
-                            <textarea class="form-control" rows="3" placeholder="Message (Optional)"></textarea>
+                            <textarea class="form-control" rows="3" placeholder="Message" id="qMessage2"></textarea>
                         </div>
-                        <button type="submit" class="btn btn-dark-green w-100">Submit</button>
-                    </form>
+                        <button type="submit" class="btn btn-dark-green w-100" id="SubmitQuery2">Submit</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -670,5 +659,58 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- Custom JS -->
     <script src="js/main.js"></script>
+
+    <script type="text/javascript" language="javascript">
+        var versionUpdate = (new Date()).getTime();
+        var script = document.createElement("script");
+        script.type = "text/javascript";
+        script.src = "https://api2.gtftech.com/scripts/queryform.min.ssl.js?v=" + versionUpdate;
+        document.body.appendChild(script);
+    </script>
+
+    <script>
+        var AgentInfo = {
+            "vAgentID": "4444",
+            "vProject": "Premium Estate Landing",
+            "vURL": "https://aug-2026-layout.netlify.app/",
+            "thankspageurl": "https://aug-2026-layout.netlify.app/thanks.htm"
+        };
+
+        $('#preferedtime').hide();
+
+        $("#SubmitQuery").click(function () {
+            var FormInfo = {
+                "SenderControlID": "qSenderName",
+                "SenderControlMobileID": "qMobileNo",
+                "SenderControlEmailID": "qEmailID",
+                "SenderControlMsgID": "qMessage"
+            };
+
+            
+            SubmitQueryData(AgentInfo, FormInfo);
+        });
+        $("#SubmitQuery1").click(function () {
+            var FormInfo = {
+                "SenderControlID": "qSenderName1",
+                "SenderControlMobileID": "qMobileNo1",
+                "SenderControlEmailID": "qEmailID1",
+                "SenderControlMsgID": "qMessage1"
+            };
+
+            
+            SubmitQueryData(AgentInfo, FormInfo);
+        });
+        $("#SubmitQuery2").click(function () {
+            var FormInfo = {
+                "SenderControlID": "qSenderName2",
+                "SenderControlMobileID": "qMobileNo2",
+                "SenderControlEmailID": "qEmailID2",
+                "SenderControlMsgID": "qMessage2"
+            };
+
+            
+            SubmitQueryData(AgentInfo, FormInfo);
+        });
+    </script>
 </body>
 </html>
