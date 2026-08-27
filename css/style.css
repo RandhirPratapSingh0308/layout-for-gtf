@@ -437,6 +437,7 @@ body {
 
 /* Responsive */
 @media (max-width: 991.98px) {
+    
     .premium-nav {
         background-color: var(--primary-green);
         padding: 10px 0;
@@ -456,6 +457,7 @@ body {
         margin-top: 40px;
     }
 }
+
 
 /* Gallery Swiper Slider */
 .gallery-slider {
@@ -726,5 +728,12 @@ body {
         top: calc(55vh - 5px) !important; /* Position just inside the bottom of the image */
         z-index: 11;
         display: block; 
+    }
+}
+
+
+@media (max-width: 767px) {
+    .hero-bg-slider .swiper-slide img {
+    height: 55vh;
     }
 }
